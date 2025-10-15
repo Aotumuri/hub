@@ -1,0 +1,44 @@
+name: Update Projects Data
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "15 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-projects:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Run updater
+        env:
+          # 対象オーナー名（このリポの所有者でOK）
+          GITHUB_OWNER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.PAT_FOR_PAGES_INDEX }}
+        run: python scripts/update_projects.py
+
+      - name: Commit & push if changed
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add _data/projects.json
+            git commit -m "chore: update _data/projects.json"
+            git push
+          else
+            echo "No changes to commit."
+          fi

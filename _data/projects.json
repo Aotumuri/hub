@@ -1,0 +1,58 @@
+[
+  {
+    "name": "path-tracer",
+    "url": "https://Aotumuri.github.io/path-tracer/",
+    "description": "",
+    "updated_at": "2025-10-13T12:20:05Z",
+    "stars": 0,
+    "language": ""
+  },
+  {
+    "name": "ani2cape_site",
+    "url": "https://Aotumuri.github.io/ani2cape_site/",
+    "description": "",
+    "updated_at": "2025-10-12T06:11:48Z",
+    "stars": 0,
+    "language": "HTML"
+  },
+  {
+    "name": "json_splitter",
+    "url": "https://Aotumuri.github.io/json_splitter/",
+    "description": "",
+    "updated_at": "2025-10-06T10:41:56Z",
+    "stars": 0,
+    "language": "HTML"
+  },
+  {
+    "name": "openfront-utility",
+    "url": "https://Aotumuri.github.io/openfront-utility/",
+    "description": "",
+    "updated_at": "2025-10-04T12:23:22Z",
+    "stars": 0,
+    "language": "TypeScript"
+  },
+  {
+    "name": "redirector",
+    "url": "https://Aotumuri.github.io/redirector/",
+    "description": "",
+    "updated_at": "2025-08-31T01:28:09Z",
+    "stars": 0,
+    "language": "HTML"
+  },
+  {
+    "name": "css-animation",
+    "url": "https://Aotumuri.github.io/css-animation/",
+    "description": "",
+    "updated_at": "2025-06-21T04:48:24Z",
+    "stars": 0,
+    "language": "HTML"
+  },
+  {
+    "name": "TerritoryConquestSimulator",
+    "url": "https://Aotumuri.github.io/TerritoryConquestSimulator/",
+    "description": "自動で動くものが見たい人へ",
+    "updated_at": "2025-03-18T22:58:15Z",
+    "stars": 1,
+    "language": "JavaScript"
+  }
+]

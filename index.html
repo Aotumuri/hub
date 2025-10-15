@@ -1,0 +1,19 @@
+<h1>My Projects</h1>
+<p>GitHub Pages で公開しているプロジェクトの一覧です。（自動更新）</p>
+
+<ul>
+  {% assign projects = site.data.projects %}
+  {% if projects and projects.size > 0 %}
+    {% for project in projects %}
+      <li style="margin-bottom: 0.5rem;">
+        <a href="{{ project.url }}">{{ project.name }}</a>
+        {% if project.description %} — {{ project.description }}{% endif %}
+        {% if project.language %} <em>( {{ project.language }} )</em>{% endif %}
+        {% if project.stars and project.stars > 0 %} ★{{ project.stars }}{% endif %}
+        {% if project.updated_at %} <small>updated: {{ project.updated_at | date: "%Y-%m-%d" }}</small>{% endif %}
+      </li>
+    {% endfor %}
+  {% else %}
+    <li>まだプロジェクトが見つかりませんでした。</li>
+  {% endif %}
+</ul>
