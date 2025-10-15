@@ -7,6 +7,7 @@ from urllib.parse import urljoin
 
 """
 GitHub Pages を公開しているリポジトリを収集し、_data/projects.json を生成します。
+出力JSONには name, url (Pages), github_url (GitHubリポジトリURL), description, updated_at, stars, language を含みます。
 
 環境変数:
 - GITHUB_TOKEN (推奨): GitHub API 用トークン。未設定でも public 情報取得は可能（低レート制限）。
@@ -103,11 +104,13 @@ def main():
         updated_at = repo.get("pushed_at") or repo.get("updated_at") or ""
         stargazers = repo.get("stargazers_count", 0)
         language = repo.get("language") or ""
+        github_url = repo.get("html_url") or f"https://github.com/{OWNER}/{name}"
 
         pages_projects.append(
             {
                 "name": name,
                 "url": url,
+                "github_url": github_url,
                 "description": description,
                 "updated_at": updated_at,
                 "stars": stargazers,
