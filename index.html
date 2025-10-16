@@ -12,6 +12,7 @@ title: My GitHub Pages Hub
     {% for project in projects %}
       <li style="margin-bottom: 0.5rem;">
         <a href="{{ project.url }}">{{ project.name }}</a>
+        <small>[<a href="{{ project.github_url }}">GitHub</a>]</small>
         {% if project.description %} — {{ project.description }}{% endif %}
         {% if project.language %} <em>( {{ project.language }} )</em>{% endif %}
         {% if project.stars and project.stars > 0 %} ★{{ project.stars }}{% endif %}
