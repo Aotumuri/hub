@@ -6,20 +6,35 @@ title: My GitHub Pages Hub
 <h1>My Projects</h1>
 <p>GitHub Pages で公開しているプロジェクトの一覧です。（自動更新）</p>
 
-<ul>
+<div class="projects-list" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;">
   {% assign projects = site.data.projects %}
   {% if projects and projects.size > 0 %}
     {% for project in projects %}
-      <li style="margin-bottom: 0.5rem;">
-        <a href="{{ project.url }}">{{ project.name }}</a>
-        <small>[<a href="{{ project.github_url }}">GitHub</a>]</small>
-        {% if project.description %} — {{ project.description }}{% endif %}
-        {% if project.language %} <em>( {{ project.language }} )</em>{% endif %}
-        {% if project.stars and project.stars > 0 %} ★{{ project.stars }}{% endif %}
-        {% if project.updated_at %} <small>updated: {{ project.updated_at | date: "%Y-%m-%d" }}</small>{% endif %}
-      </li>
+      <div style="border: 1px solid #ddd; border-radius: 6px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: #fff;">
+        <div style="margin-bottom: 0.5rem;">
+          <strong style="font-size: 1.1rem;">
+            <a href="{{ project.url }}" style="text-decoration: none; color: #333;">{{ project.name }}</a>
+          </strong>
+          <small style="margin-left: 0.5rem;">
+            [<a href="{{ project.github_url }}" style="text-decoration: none; color: #0366d6;">GitHub</a>]
+          </small>
+        </div>
+        {% if project.description %}
+          <p style="font-size: 0.9rem; color: #555; margin: 0 0 0.5rem 0;">{{ project.description }}</p>
+        {% endif %}
+        <div style="font-size: 0.8rem; color: #777;">
+          {% if project.language %}<span>{{ project.language }}</span>{% endif %}
+          {% if project.stars and project.stars > 0 %}<span>{% if project.language %} &middot; {% endif %}★{{ project.stars }}</span>{% endif %}
+          {% if project.updated_at %}
+            <span>
+              {% if project.language or (project.stars and project.stars > 0) %} &middot; {% endif %}
+              updated: {{ project.updated_at | date: "%Y-%m-%d" }}
+            </span>
+          {% endif %}
+        </div>
+      </div>
     {% endfor %}
   {% else %}
     <li>まだプロジェクトが見つかりませんでした。</li>
   {% endif %}
-</ul>
+</div>
