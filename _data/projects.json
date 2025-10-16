@@ -4,7 +4,7 @@
     "url": "https://Aotumuri.github.io/hub/",
     "github_url": "https://github.com/Aotumuri/hub",
     "description": "私の全てのサイトを確認できます。",
-    "updated_at": "2025-10-15T23:49:23Z",
+    "updated_at": "2025-10-16T00:01:20Z",
     "stars": 0,
     "language": "Python"
   },
@@ -12,7 +12,7 @@
     "name": "path-tracer",
     "url": "https://Aotumuri.github.io/path-tracer/",
     "github_url": "https://github.com/Aotumuri/path-tracer",
-    "description": "",
+    "description": "jsonの位置情報を視覚的にわかりやすくします。",
     "updated_at": "2025-10-13T12:20:05Z",
     "stars": 0,
     "language": ""
@@ -21,7 +21,7 @@
     "name": "ani2cape_site",
     "url": "https://Aotumuri.github.io/ani2cape_site/",
     "github_url": "https://github.com/Aotumuri/ani2cape_site",
-    "description": "",
+    "description": ".aniファイルを.capeファイルに変換します。",
     "updated_at": "2025-10-12T06:11:48Z",
     "stars": 0,
     "language": "HTML"
@@ -30,7 +30,7 @@
     "name": "json_splitter",
     "url": "https://Aotumuri.github.io/json_splitter/",
     "github_url": "https://github.com/Aotumuri/json_splitter",
-    "description": "",
+    "description": "jsonを複数ファイルに分割します。",
     "updated_at": "2025-10-06T10:41:56Z",
     "stars": 0,
     "language": "HTML"
@@ -39,7 +39,7 @@
     "name": "openfront-utility",
     "url": "https://Aotumuri.github.io/openfront-utility/",
     "github_url": "https://github.com/Aotumuri/openfront-utility",
-    "description": "",
+    "description": "This project is a tool for generating and previewing Openfront.io patterns in Base64 format.",
     "updated_at": "2025-10-04T12:23:22Z",
     "stars": 0,
     "language": "TypeScript"
@@ -48,7 +48,7 @@
     "name": "redirector",
     "url": "https://Aotumuri.github.io/redirector/",
     "github_url": "https://github.com/Aotumuri/redirector",
-    "description": "",
+    "description": "リダイレクト用",
     "updated_at": "2025-08-31T01:28:09Z",
     "stars": 0,
     "language": "HTML"
@@ -57,7 +57,7 @@
     "name": "css-animation",
     "url": "https://Aotumuri.github.io/css-animation/",
     "github_url": "https://github.com/Aotumuri/css-animation",
-    "description": "",
+    "description": "cssのテンプレート集",
     "updated_at": "2025-06-21T04:48:24Z",
     "stars": 0,
     "language": "HTML"
