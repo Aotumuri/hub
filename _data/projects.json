@@ -1,5 +1,14 @@
 [
   {
+    "name": "hub",
+    "url": "https://Aotumuri.github.io/hub/",
+    "github_url": "https://github.com/Aotumuri/hub",
+    "description": "私の全てのサイトを確認できます。",
+    "updated_at": "2025-11-10T02:20:28Z",
+    "stars": 1,
+    "language": "Python"
+  },
+  {
     "name": "openfront-utility",
     "url": "https://Aotumuri.github.io/openfront-utility/",
     "github_url": "https://github.com/Aotumuri/openfront-utility",
@@ -7,15 +16,6 @@
     "updated_at": "2025-11-09T23:25:32Z",
     "stars": 0,
     "language": "TypeScript"
-  },
-  {
-    "name": "hub",
-    "url": "https://Aotumuri.github.io/hub/",
-    "github_url": "https://github.com/Aotumuri/hub",
-    "description": "私の全てのサイトを確認できます。",
-    "updated_at": "2025-11-09T02:19:02Z",
-    "stars": 1,
-    "language": "Python"
   },
   {
     "name": "path-tracer",
