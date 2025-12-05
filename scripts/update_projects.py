@@ -12,6 +12,8 @@ GitHub Pages を公開しているリポジトリを収集し、_data/projects.j
 環境変数:
 - GITHUB_TOKEN (推奨): GitHub API 用トークン。未設定でも public 情報取得は可能（低レート制限）。
 - GITHUB_OWNER (必須): 対象ユーザー（または Organization）名。例: "Aotumuri"
+- GITHUB_EXCLUDE_REPOS (任意): カンマ区切りで除外するリポジトリ名を指定
+- GITHUB_SELF_REPO (任意): 自身のリポジトリ名を明示したい場合に指定（未指定ならカレントディレクトリ名を使用）
 
 使い方:
   python scripts/update_projects.py
@@ -22,6 +24,16 @@ API_BASE = "https://api.github.com"
 OWNER = os.getenv("GITHUB_OWNER")
 if not OWNER:
     raise SystemExit("ERROR: GITHUB_OWNER が未設定です。環境変数で設定してください。")
+OWNER_LOWER = OWNER.lower()
+
+exclude_env = os.getenv("GITHUB_EXCLUDE_REPOS", "")
+EXCLUDE_REPOS = {
+    name.strip().lower() for name in exclude_env.split(",") if name.strip()
+}
+self_repo = os.getenv("GITHUB_SELF_REPO") or os.path.basename(os.getcwd())
+if self_repo:
+    EXCLUDE_REPOS.add(self_repo.lower())
+EXCLUDE_FULL_NAMES = {f"{OWNER_LOWER}/{name}" for name in EXCLUDE_REPOS}
 
 TOKEN = os.getenv("GITHUB_TOKEN")
 HEADERS = {"Accept": "application/vnd.github+json"}
@@ -97,9 +109,13 @@ def main():
         if repo.get("archived"):
             # デフォルトではアーカイブを除外（必要なら外してください）
             continue
+        repo_name = repo["name"]
+        full_name = repo.get("full_name", f"{OWNER}/{repo_name}").lower()
+        if repo_name.lower() in EXCLUDE_REPOS or full_name in EXCLUDE_FULL_NAMES:
+            continue
 
-        name = repo["name"]
-        url = get_pages_url(OWNER, name, has_pages=True)
+        name = repo_name
+        url = get_pages_url(OWNER, repo_name, has_pages=True)
         description = repo.get("description") or ""
         updated_at = repo.get("pushed_at") or repo.get("updated_at") or ""
         stargazers = repo.get("stargazers_count", 0)
