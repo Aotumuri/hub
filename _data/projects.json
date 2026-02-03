@@ -1,20 +1,20 @@
 [
   {
+    "name": "openfront-utility",
+    "url": "https://Aotumuri.github.io/openfront-utility/",
+    "github_url": "https://github.com/Aotumuri/openfront-utility",
+    "description": "This project is a tool for generating and previewing Openfront.io patterns in Base64 format.",
+    "updated_at": "2026-02-02T11:55:18Z",
+    "stars": 0,
+    "language": "TypeScript"
+  },
+  {
     "name": "isekai-sim",
     "url": "https://Aotumuri.github.io/isekai-sim/",
     "github_url": "https://github.com/Aotumuri/isekai-sim",
     "description": "自動で動くものが見たい人へ 2",
     "updated_at": "2026-02-01T12:48:55Z",
     "stars": 2,
-    "language": "TypeScript"
-  },
-  {
-    "name": "openfront-utility",
-    "url": "https://Aotumuri.github.io/openfront-utility/",
-    "github_url": "https://github.com/Aotumuri/openfront-utility",
-    "description": "This project is a tool for generating and previewing Openfront.io patterns in Base64 format.",
-    "updated_at": "2026-01-22T13:09:03Z",
-    "stars": 0,
     "language": "TypeScript"
   },
   {
