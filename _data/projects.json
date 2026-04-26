@@ -1,5 +1,14 @@
 [
   {
+    "name": "TwoMalkov",
+    "url": "https://Aotumuri.github.io/TwoMalkov/",
+    "github_url": "https://github.com/Aotumuri/TwoMalkov",
+    "description": "Enjoy two state Malkov Chain",
+    "updated_at": "2026-04-25T07:41:03Z",
+    "stars": 0,
+    "language": ""
+  },
+  {
     "name": "path-tracer",
     "url": "https://Aotumuri.github.io/path-tracer/",
     "github_url": "https://github.com/Aotumuri/path-tracer",
