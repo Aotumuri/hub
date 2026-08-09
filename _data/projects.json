@@ -1,5 +1,14 @@
 [
   {
+    "name": "isekai-sim",
+    "url": "https://Aotumuri.github.io/isekai-sim/",
+    "github_url": "https://github.com/Aotumuri/isekai-sim",
+    "description": "自動で動くものが見たい人へ 2",
+    "updated_at": "2026-08-09T02:27:40Z",
+    "stars": 2,
+    "language": "TypeScript"
+  },
+  {
     "name": "openfront-utility",
     "url": "https://Aotumuri.github.io/openfront-utility/",
     "github_url": "https://github.com/Aotumuri/openfront-utility",
@@ -43,15 +52,6 @@
     "updated_at": "2026-03-08T13:30:06Z",
     "stars": 0,
     "language": "JavaScript"
-  },
-  {
-    "name": "isekai-sim",
-    "url": "https://Aotumuri.github.io/isekai-sim/",
-    "github_url": "https://github.com/Aotumuri/isekai-sim",
-    "description": "自動で動くものが見たい人へ 2",
-    "updated_at": "2026-02-01T12:48:55Z",
-    "stars": 2,
-    "language": "TypeScript"
   },
   {
     "name": "ani2cape_site",
