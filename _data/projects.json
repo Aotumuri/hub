@@ -1,5 +1,23 @@
 [
   {
+    "name": "openfront-page",
+    "url": "https://Aotumuri.github.io/openfront-page/",
+    "github_url": "https://github.com/Aotumuri/openfront-page",
+    "description": "",
+    "updated_at": "2026-09-04T04:00:11Z",
+    "stars": 0,
+    "language": "TypeScript"
+  },
+  {
+    "name": "translate-helper",
+    "url": "https://Aotumuri.github.io/translate-helper/",
+    "github_url": "https://github.com/Aotumuri/translate-helper",
+    "description": "",
+    "updated_at": "2026-09-03T12:05:18Z",
+    "stars": 0,
+    "language": "TypeScript"
+  },
+  {
     "name": "openfront-utility",
     "url": "https://Aotumuri.github.io/openfront-utility/",
     "github_url": "https://github.com/Aotumuri/openfront-utility",
