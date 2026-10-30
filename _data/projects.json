@@ -1,5 +1,14 @@
 [
   {
+    "name": "Aotumuri-site",
+    "url": "https://Aotumuri.github.io/Aotumuri-site/",
+    "github_url": "https://github.com/Aotumuri/Aotumuri-site",
+    "description": "",
+    "updated_at": "2026-10-29T12:44:29Z",
+    "stars": 0,
+    "language": "TypeScript"
+  },
+  {
     "name": "openfront-page",
     "url": "https://Aotumuri.github.io/openfront-page/",
     "github_url": "https://github.com/Aotumuri/openfront-page",
