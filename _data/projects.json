@@ -1,20 +1,20 @@
 [
   {
+    "name": "aotumuri.github.io",
+    "url": "https://aotumuri.github.io/",
+    "github_url": "https://github.com/Aotumuri/aotumuri.github.io",
+    "description": "",
+    "updated_at": "2026-11-15T12:45:41Z",
+    "stars": 0,
+    "language": "TypeScript"
+  },
+  {
     "name": "isekai-sim",
     "url": "https://Aotumuri.github.io/isekai-sim/",
     "github_url": "https://github.com/Aotumuri/isekai-sim",
     "description": "自動で動くものが見たい人へ 2",
     "updated_at": "2026-11-14T05:56:34Z",
     "stars": 2,
-    "language": "TypeScript"
-  },
-  {
-    "name": "aotumuri.github.io",
-    "url": "https://aotumuri.github.io/",
-    "github_url": "https://github.com/Aotumuri/aotumuri.github.io",
-    "description": "",
-    "updated_at": "2026-11-08T04:33:11Z",
-    "stars": 0,
     "language": "TypeScript"
   },
   {
