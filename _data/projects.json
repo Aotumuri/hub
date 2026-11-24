@@ -4,9 +4,18 @@
     "url": "https://Aotumuri.github.io/isekai-sim/",
     "github_url": "https://github.com/Aotumuri/isekai-sim",
     "description": "自動で動くものが見たい人へ 2",
-    "updated_at": "2026-11-21T03:46:04Z",
+    "updated_at": "2026-11-24T09:06:53Z",
     "stars": 2,
     "language": "TypeScript"
+  },
+  {
+    "name": "qm",
+    "url": "https://Aotumuri.github.io/qm/",
+    "github_url": "https://github.com/Aotumuri/qm",
+    "description": "",
+    "updated_at": "2026-11-24T08:43:32Z",
+    "stars": 0,
+    "language": "Vue"
   },
   {
     "name": "aotumuri.github.io",
